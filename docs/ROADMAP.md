@@ -18,8 +18,9 @@ fallback) submission. See `docs/statement-of-need.md` for the rationale.
 - [x] Python CLI (`choachoaktevote-board`): create/configure a new session from
       a config file, output link + QR (Firestore-backed via `--publish`)
 - [ ] Deploy a personal instance (own hosting + backend) for real use
-- [ ] `examples/chks.json` — worked example from Val's CHKS variable subset
-- [ ] Basic automated tests (config parsing, board/session creation, export
+- [x] `examples/chks_example.json` — worked example from Val's curated CHKS
+      feature set (85 concepts)
+- [x] Basic automated tests (config parsing, board/session creation, export
       schema) + CI workflow running them on every PR
 - [ ] CONTRIBUTING.md, CODE_OF_CONDUCT.md in place (done in initial scaffold)
 
