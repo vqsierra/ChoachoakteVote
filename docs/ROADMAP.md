@@ -13,8 +13,11 @@ fallback) submission. See `docs/statement-of-need.md` for the rationale.
       Section III.A before treating any license as final.
 
 ## Stage 2 — Build for personal teaching use
-- [ ] Webapp: config-driven item loading (CSV/JSON), real-time voting board
-- [ ] Webapp: participant join via link + QR code, no account required
+- [x] Webapp: config-driven item loading (CSV/JSON), real-time voting board
+      (hybrid dot-voting mechanic, star/circle stickers, live Firestore sync)
+- [x] Webapp: participant join via link + QR code, no account required
+      (localStorage-based anonymous identity; QR generation is on the CLI
+      side via `create --publish`)
 - [x] Python CLI (`choachoaktevote-board`): create/configure a new session from
       a config file, output link + QR (Firestore-backed via `--publish`)
 - [ ] Deploy a personal instance (own hosting + backend) for real use
@@ -22,7 +25,7 @@ fallback) submission. See `docs/statement-of-need.md` for the rationale.
       feature set (85 concepts)
 - [x] Basic automated tests (config parsing, board/session creation, export
       schema) + CI workflow running them on every PR
-- [ ] CONTRIBUTING.md, CODE_OF_CONDUCT.md in place (done in initial scaffold)
+- [x] CONTRIBUTING.md, CODE_OF_CONDUCT.md in place (done in initial scaffold)
 
 ## Stage 3 — Accumulate public development history
 - [ ] Use in at least one real class/CBPR session
