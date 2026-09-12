@@ -1,6 +1,6 @@
 import json
 
-from choachoakte.board import create_board, export_results
+from choachoaktevote.board import create_board, export_results
 
 
 def _write_config(tmp_path):

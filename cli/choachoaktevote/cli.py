@@ -1,4 +1,4 @@
-"""Command-line interface for creating Choachoakte voting sessions."""
+"""Command-line interface for creating ChoachoakteVote voting sessions."""
 from __future__ import annotations
 
 import csv
@@ -15,7 +15,7 @@ from .config import ConfigError
 @click.group()
 @click.version_option()
 def main():
-    """Choachoakte: create participatory sticky-note voting sessions."""
+    """ChoachoakteVote: create participatory sticky-note voting sessions."""
 
 
 @main.command("create")

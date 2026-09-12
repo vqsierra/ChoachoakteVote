@@ -1,4 +1,4 @@
-"""Load and validate item configs (CSV or JSON) for a Choachoakte session.
+"""Load and validate item configs (CSV or JSON) for a ChoachoakteVote session.
 
 An item config defines the sticky notes participants will vote on. Each item
 needs at minimum an ``id`` and a ``label``; a ``description`` is optional.

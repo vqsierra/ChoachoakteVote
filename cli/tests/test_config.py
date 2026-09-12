@@ -1,7 +1,7 @@
 import json
 import pytest
 
-from choachoakte.config import ConfigError, load_items
+from choachoaktevote.config import ConfigError, load_items
 
 
 def test_load_json_items(tmp_path):

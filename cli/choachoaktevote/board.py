@@ -1,10 +1,10 @@
-"""Create and export Choachoakte voting sessions ("boards").
+"""Create and export ChoachoakteVote voting sessions ("boards").
 
 This module intentionally does not depend on any specific backend
 (Firebase, etc.) yet — :func:`create_board` returns a plain dict describing
 the session, and a backend-specific writer is expected to be layered on top
 (see docs/ROADMAP.md, Stage 2). Keeping this backend-agnostic is what lets
-someone deploy Choachoakte without being locked into Firebase specifically.
+someone deploy ChoachoakteVote without being locked into Firebase specifically.
 """
 from __future__ import annotations
 
@@ -50,7 +50,7 @@ def export_results(board: Board, vote_counts: dict[str, int]) -> list[dict]:
     """Produce a tidy, analysis-ready export of vote results.
 
     Returns one row per item: ``board_id``, ``item_id``, ``label``,
-    ``vote_count`` — the structured-data export that is Choachoakte's core
+    ``vote_count`` — the structured-data export that is ChoachoakteVote's core
     differentiator versus workshop-oriented dot-voting tools.
     """
     rows = []

@@ -1,6 +1,6 @@
-# choachoakte-board (CLI)
+# choachoaktevote-board (CLI)
 
-Python CLI for creating Choachoakte voting sessions ("boards") from a
+Python CLI for creating ChoachoakteVote voting sessions ("boards") from a
 CSV/JSON item config file.
 
 ## Install (development)
@@ -13,7 +13,7 @@ pip install -e ".[dev]"
 ## Usage
 
 ```bash
-choachoakte-board create --config ../examples/chks_example.json --title "Week 3"
+choachoaktevote-board create --config ../examples/chks_example.json --title "Week 3"
 ```
 
 This currently prints (or writes, with `--out`) the board definition as

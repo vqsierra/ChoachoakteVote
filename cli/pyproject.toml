@@ -3,9 +3,9 @@ requires = ["setuptools>=68", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "choachoakte-board"
+name = "choachoaktevote-board"
 version = "0.0.1"
-description = "CLI for creating and configuring Choachoakte participatory sticky-note voting sessions"
+description = "CLI for creating and configuring ChoachoakteVote participatory sticky-note voting sessions"
 readme = "README.md"
 # license: pending JHU IP/Technology Transfer Office review — see ../NOTICE.md
 requires-python = ">=3.9"
@@ -30,7 +30,7 @@ dev = [
 ]
 
 [project.scripts]
-choachoakte-board = "choachoakte.cli:main"
+choachoaktevote-board = "choachoaktevote.cli:main"
 
 [tool.setuptools.packages.find]
-include = ["choachoakte*"]
+include = ["choachoaktevote*"]

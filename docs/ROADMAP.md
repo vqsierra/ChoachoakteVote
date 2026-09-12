@@ -7,7 +7,7 @@ fallback) submission. See `docs/statement-of-need.md` for the rationale.
 - [x] Repo scaffolded, public from first commit
 - [x] Statement of need drafted
 - [ ] Statement of need reviewed/finalized by Val
-- [x] Project name and tagline finalized (Choachoakte)
+- [x] Project name and tagline finalized (ChoachoakteVote)
 - [ ] **License pending JHU review** — see NOTICE.md and decision log below.
       Disclose to JH Technology Transfer Office per University IP Policy
       Section III.A before treating any license as final.
@@ -15,7 +15,7 @@ fallback) submission. See `docs/statement-of-need.md` for the rationale.
 ## Stage 2 — Build for personal teaching use
 - [ ] Webapp: config-driven item loading (CSV/JSON), real-time voting board
 - [ ] Webapp: participant join via link + QR code, no account required
-- [ ] Python CLI (`choachoakte-board`): create/configure a new session from
+- [ ] Python CLI (`choachoaktevote-board`): create/configure a new session from
       a config file, output link + QR
 - [ ] Deploy a personal instance (own hosting + backend) for real use
 - [ ] `examples/chks.json` — worked example from Val's CHKS variable subset
@@ -44,7 +44,7 @@ fallback) submission. See `docs/statement-of-need.md` for the rationale.
       Research Software (JORS)
 
 ## Decision log
-- **Name:** Choachoakte (Yoem Noki / Yaqui — "be sticky, gooey")
+- **Name:** ChoachoakteVote (Yoem Noki / Yaqui — "be sticky, gooey")
 - **License:** Pending. Developed using JHU resources (work computer, time
   supported by an NIH grant under the IndigiText project), which per the
   JHU IP Policy (Section IV.D) likely makes JHU the IP owner. Apache 2.0 is

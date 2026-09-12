@@ -1,6 +1,6 @@
-# Choachoakte
+# ChoachoakteVote
 
-**Choachoakte** (Yoem Noki / Yaqui — intransitive verb: "be sticky, gooey")
+**ChoachoakteVote** (Yoem Noki / Yaqui — intransitive verb: "be sticky, gooey")
 is a free, open-source, no-account sticky-note voting tool for research and
 community-based participatory research (CBPR) settings.
 
@@ -23,7 +23,7 @@ dataset rather than a workshop screenshot.
 General-purpose tools (Miro, Mentimeter, Slido, Klaxoon, GroupMap,
 dotstorming) require facilitator accounts, cap participants or gate export
 on free tiers, and produce meeting-shaped output rather than tidy data.
-Choachoakte is built specifically for the CBPR/research use case: config-driven
+ChoachoakteVote is built specifically for the CBPR/research use case: config-driven
 item lists, no accounts, and structured vote-count export designed to feed
 directly into statistical or ML pipelines. See the full
 [Statement of Need](docs/statement-of-need.md) for details and the
@@ -32,10 +32,10 @@ alternatives considered.
 ## Project structure
 
 ```
-choachoakte/
+choachoaktevote/
 ├── webapp/          # Frontend voting app (participant + real-time board)
-├── cli/             # Python package: choachoakte-board — session/board creation CLI
-│   └── choachoakte/
+├── cli/             # Python package: choachoaktevote-board — session/board creation CLI
+│   └── choachoaktevote/
 ├── examples/         # Example item configs (e.g., a CHKS variable subset)
 ├── docs/             # Statement of need, roadmap, design notes
 └── .github/          # Issue templates, CI workflows

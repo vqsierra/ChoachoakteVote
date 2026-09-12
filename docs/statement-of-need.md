@@ -39,7 +39,7 @@ agile/retrospective use, and none combine a config-driven item list with a
 structured, analysis-ready export designed for downstream research or
 machine-learning use.
 
-**Choachoakte** (Yoem Noki / Yaqui, intransitive verb: "be sticky, gooey")
+**ChoachoakteVote** (Yoem Noki / Yaqui, intransitive verb: "be sticky, gooey")
 fills this gap. It is a free, open-source, no-account sticky-note voting tool
 designed specifically for research and CBPR settings:
 
@@ -58,7 +58,7 @@ designed specifically for research and CBPR settings:
   configuration file, so no dedicated admin interface is required and each
   session can be reproducibly scripted.
 
-Choachoakte is aimed at researchers, instructors, and community partners
+ChoachoakteVote is aimed at researchers, instructors, and community partners
 running participatory prioritization activities who need a free, low-friction,
 research-appropriate alternative to commercial workshop tools, and a
 structured-data output that existing dot-voting tools do not provide.

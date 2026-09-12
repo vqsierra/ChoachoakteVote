@@ -1,4 +1,4 @@
-# Handoff: Choachoakte — GitHub setup and continued build
+# Handoff: ChoachoakteVote — GitHub setup and continued build
 
 **Context for Claude Code:** This repo was scaffolded in a sandboxed
 environment with no network access, so a local git repo exists with one
@@ -25,10 +25,10 @@ git status           # should be clean
 
 Structure:
 ```
-choachoakte/
+choachoaktevote/
 ├── webapp/                  # placeholder — not yet built
-├── cli/                     # working Python CLI package (choachoakte-board)
-│   ├── choachoakte/         # config.py, board.py, cli.py, __init__.py
+├── cli/                     # working Python CLI package (choachoaktevote-board)
+│   ├── choachoaktevote/         # config.py, board.py, cli.py, __init__.py
 │   ├── tests/                # pytest suite — passes as of initial commit
 │   ├── pyproject.toml
 │   └── README.md
@@ -55,8 +55,8 @@ This is the step that actually starts the public commit-history clock that
 JOSS's review criteria care about — do this as early as possible.
 
 ```bash
-# from inside choachoakte/, with GitHub CLI authenticated (gh auth login)
-gh repo create choachoakte --public --source=. --remote=origin \
+# from inside choachoaktevote/, with GitHub CLI authenticated (gh auth login)
+gh repo create choachoaktevote --public --source=. --remote=origin \
   --description "Free, open-source, no-account sticky-note voting for participatory research (CBPR)" \
   --push
 ```
@@ -66,7 +66,7 @@ github.com under Val's account (public, no README/license/gitignore —
 this repo already has them), then:
 
 ```bash
-git remote add origin https://github.com/<val-username>/choachoakte.git
+git remote add origin https://github.com/<val-username>/choachoaktevote.git
 git branch -M main
 git push -u origin main
 ```
@@ -96,7 +96,7 @@ Priority order:
    workflow Val described (facilitator runs the CLI locally to spin up a
    board per session, no admin UI in the app itself)
 2. Scaffold `webapp/`: participant-facing voting UI reading the same
-   item-config schema as `cli/choachoakte/config.py`, join by link or QR
+   item-config schema as `cli/choachoaktevote/config.py`, join by link or QR
 3. Replace `examples/chks_example.json` with Val's real ~20-variable CHKS
    subset once she provides it (currently a placeholder — see
    `examples/README.md`)
@@ -112,7 +112,7 @@ Priority order:
 - Don't submit to JOSS or draft the JOSS paper.md/paper.bib — Stage 4 in the
   roadmap, gated on 6+ months of public history, real use in a session, AND
   a resolved license (JOSS requires an OSI-approved license at submission)
-- Don't change the project name without checking with Val ("Choachoakte,"
+- Don't change the project name without checking with Val ("ChoachoakteVote,"
   Yoem Noki/Yaqui for "be sticky, gooey")
 
 ## Questions for Val (surface these, don't guess)

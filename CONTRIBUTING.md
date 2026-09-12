@@ -1,4 +1,4 @@
-# Contributing to Choachoakte
+# Contributing to ChoachoakteVote
 
 Thanks for your interest in contributing! This project is developed openly
 from its earliest stages, and issues, discussion, and pull requests are

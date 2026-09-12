@@ -28,4 +28,4 @@ jobs:
       - name: Run tests
         run: |
           cd cli
-          pytest --cov=choachoakte --cov-report=term-missing
+          pytest --cov=choachoaktevote --cov-report=term-missing
