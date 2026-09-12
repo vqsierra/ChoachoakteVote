@@ -21,6 +21,8 @@ webapp/build/
 .firebase/
 firebase-debug.log
 serviceAccountKey.json
+*firebase-adminsdk*.json
+.runtimeconfig.json
 
 # OS / editor
 .DS_Store
