@@ -76,19 +76,34 @@ Firebase project or credentials are needed in CI.
 
 ## Deployment
 
-Recommended: **Cloudflare Pages**, since the project's domain (delasierra.io)
-already lives in Cloudflare — avoids the SSL-cert conflicts that can happen
-running Firebase Hosting behind Cloudflare's proxy. Firestore remains the
-backend either way; only the static frontend's host changes.
+Deployed as a Cloudflare Worker serving static assets (see
+`../wrangler.jsonc` at the repo root) — chosen over Firebase Hosting since
+the project's domain (delasierra.io) already lives in Cloudflare, avoiding
+the SSL-cert conflicts that can happen running Firebase Hosting behind
+Cloudflare's proxy. Firestore remains the backend regardless of where the
+static frontend is hosted.
+
+Live at:
+- https://choachoaktevote.delasierra.io (custom domain)
+- https://choachoaktevote.vsierrajr.workers.dev (fallback)
+
+To redeploy after a change:
 
 ```bash
-npm run build   # outputs to dist/
+cd webapp
+VITE_FIREBASE_API_KEY=... VITE_FIREBASE_AUTH_DOMAIN=... VITE_FIREBASE_PROJECT_ID=... \
+VITE_FIREBASE_STORAGE_BUCKET=... VITE_FIREBASE_MESSAGING_SENDER_ID=... VITE_FIREBASE_APP_ID=... \
+npm run build
+cd ..
+npx wrangler deploy
 ```
 
-Point a Cloudflare Pages project at this `webapp/` directory (build command
-`npm run build`, output directory `dist`), set the production environment
-variables from `.env.example`, and add a CNAME for
-`choachoaktevote.delasierra.io` in Cloudflare DNS pointing at the Pages
-deployment.
+(the real values are in the Firebase Console — see the Setup section above)
+This is currently a manual step; there's no CI/CD auto-deploy on push yet.
+
+The custom domain and DNS are managed via `wrangler.jsonc`'s `routes` —
+Wrangler auto-provisions the DNS/SSL since the domain's zone is on the same
+Cloudflare account. Deploying under a different domain or account just
+means changing that one config value.
 
 Tracked in `../docs/ROADMAP.md`, Stage 2.
