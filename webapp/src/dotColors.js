@@ -1,4 +1,6 @@
-const PALETTE = ['#5f8a4e', '#d99a34', '#c15a3c', '#b23a6b', '#3f7ea6', '#8a5fb0'];
+// Vivid, highly saturated — echoing the holographic star stickers used in
+// the original in-person activity, not the muted card/background palette.
+const PALETTE = ['#00c2a8', '#ffd400', '#ff5c8a', '#7c4dff', '#2ec4ff', '#ff8a00'];
 
 function hashString(str) {
   let hash = 0;

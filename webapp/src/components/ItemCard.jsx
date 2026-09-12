@@ -3,9 +3,8 @@ import DotCluster from './DotCluster.jsx';
 export default function ItemCard({ item, voteCount, placements, yourVotes, disabled, onVote }) {
   return (
     <div className="item-card">
-      {yourVotes > 0 && <span className="item-card__yours">you: {yourVotes}</span>}
       <h2 className="item-card__title">{item.label}</h2>
-      <DotCluster itemId={item.id} count={voteCount} placements={placements} />
+      <DotCluster itemId={item.id} count={voteCount} placements={placements} yourVotes={yourVotes} />
       <div className="item-card__footer">
         <span className="item-card__count" aria-label={`${voteCount} votes`}>
           {voteCount}
