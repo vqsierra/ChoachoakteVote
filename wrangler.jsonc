@@ -2,11 +2,15 @@
   "$schema": "webapp/node_modules/wrangler/config-schema.json",
   "name": "choachoaktevote",
   "compatibility_date": "2026-09-11",
+  "workers_dev": true,
   "observability": {
     "enabled": true
   },
   "assets": {
     "directory": "webapp/dist",
     "not_found_handling": "single-page-application"
-  }
+  },
+  "routes": [
+    { "pattern": "choachoaktevote.delasierra.io", "custom_domain": true }
+  ]
 }

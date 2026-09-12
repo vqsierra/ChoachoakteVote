@@ -20,7 +20,8 @@ fallback) submission. See `docs/statement-of-need.md` for the rationale.
       side via `create --publish`)
 - [x] Python CLI (`choachoaktevote-board`): create/configure a new session from
       a config file, output link + QR (Firestore-backed via `--publish`)
-- [ ] Deploy a personal instance (own hosting + backend) for real use
+- [x] Deploy a personal instance (own hosting + backend) for real use — live
+      at https://choachoaktevote.delasierra.io (Cloudflare Worker + Firestore)
 - [x] `examples/chks_example.json` — worked example from Val's curated CHKS
       feature set (85 concepts)
 - [x] Basic automated tests (config parsing, board/session creation, export
