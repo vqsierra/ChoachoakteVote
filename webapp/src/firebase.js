@@ -1,5 +1,5 @@
 import { initializeApp } from 'firebase/app';
-import { getFirestore } from 'firebase/firestore';
+import { initializeFirestore } from 'firebase/firestore';
 
 const firebaseConfig = {
   apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
@@ -11,4 +11,13 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
-export const db = getFirestore(app);
+
+// Auto-detect long-polling instead of the default WebChannel transport —
+// WebChannel's persistent streaming connection can be misread as "offline"
+// behind school/shared wifi proxies and some sandboxed/restrictive
+// browser environments. Auto-detect only falls back to long-polling when
+// the streaming transport actually fails, so it doesn't cost anything on
+// a normal connection.
+export const db = initializeFirestore(app, {
+  experimentalAutoDetectLongPolling: true,
+});
