@@ -1,10 +1,11 @@
 # Example configs
 
-`chks_example.json` is an **illustrative placeholder**, not the actual CHKS
-codebook or your selected ~20 variables from prior activities — swap in the
-real item list when you're ready. It exists to show the expected JSON shape
-(`id`, `label`, optional `description`) and to give the CLI/tests something
-concrete to run against.
+`chks_example.json` is a curated set of 85 CHKS concepts (age/grade through
+substance access) hand-selected and edited for plain-language youth voting,
+consolidated from the full CHKS secondary-data codebook catalog (see
+`chks_full_feature_reference.csv` in this directory for the fuller
+reference these were drawn from). It also demonstrates the config's
+expected JSON shape (`id`, `label`, optional `description`).
 
 A CSV version of the same shape works too:
 
