@@ -4,6 +4,11 @@ Thanks for your interest in contributing! This project is developed openly
 from its earliest stages, and issues, discussion, and pull requests are
 welcome even while it's in early development.
 
+> **Note on license status:** this repo does not yet have a license file —
+> see [NOTICE.md](NOTICE.md). Feedback, issues, and discussion are welcome
+> now; substantial code contributions may need to wait until licensing (and
+> any associated contributor agreement) is finalized with Johns Hopkins.
+
 ## Ways to contribute
 - **Bug reports / feature requests:** open a GitHub issue. For bugs, include
   steps to reproduce; for features, describe the use case (especially if

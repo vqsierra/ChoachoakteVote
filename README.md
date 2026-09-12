@@ -13,6 +13,10 @@ dataset rather than a workshop screenshot.
 > **Status: early development.** This project is being built in the open.
 > See [docs/statement-of-need.md](docs/statement-of-need.md) for the full
 > rationale and [docs/ROADMAP.md](docs/ROADMAP.md) for current status.
+>
+> **License status: pending.** This repo does not yet have a license file —
+> see [NOTICE.md](NOTICE.md) for why, and what that means for use/reuse in
+> the meantime.
 
 ## Why
 
@@ -39,7 +43,9 @@ choachoakte/
 
 ## License
 
-Apache License 2.0 — see [LICENSE](LICENSE).
+**Pending.** See [NOTICE.md](NOTICE.md). The goal is a free, open-source
+license (Apache 2.0 is the current candidate) once ownership/licensing is
+confirmed with Johns Hopkins.
 
 ## Citation
 

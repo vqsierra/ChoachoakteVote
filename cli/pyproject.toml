@@ -7,14 +7,13 @@ name = "choachoakte-board"
 version = "0.0.1"
 description = "CLI for creating and configuring Choachoakte participatory sticky-note voting sessions"
 readme = "README.md"
-license = { text = "Apache-2.0" }
+# license: pending JHU IP/Technology Transfer Office review — see ../NOTICE.md
 requires-python = ">=3.9"
 authors = [
   { name = "Val" }
 ]
 keywords = ["cbpr", "participatory-research", "dot-voting", "research-tools"]
 classifiers = [
-  "License :: OSI Approved :: Apache Software License",
   "Programming Language :: Python :: 3",
   "Intended Audience :: Science/Research",
   "Topic :: Scientific/Engineering",

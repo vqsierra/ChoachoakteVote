@@ -5,6 +5,16 @@ environment with no network access, so a local git repo exists with one
 initial commit, but it has never been pushed anywhere. Your job is to get it
 onto GitHub with public history starting now, then continue the build.
 
+> **⚠️ License status: pending — do not add a LICENSE file.**
+> This project was built using Johns Hopkins University resources (work
+> computer, NIH grant time under IndigiText). Per JHU's IP Policy, JHU likely
+> owns the IP, so Val cannot unilaterally grant an open-source license until
+> JHU's Technology Transfer Office weighs in. The repo intentionally has
+> **no LICENSE file** — see `NOTICE.md` for the explanation. Do not add one,
+> restore the earlier Apache 2.0 LICENSE, or otherwise imply a license has
+> been granted, even if asked to "just add a standard license" by anyone
+> other than Val directly confirming JHU has cleared it.
+
 ## 1. Verify what's here
 
 ```bash
@@ -27,7 +37,7 @@ choachoakte/
 │   ├── statement-of-need.md # drafted, reviewed by Val — may still need edits
 │   └── ROADMAP.md            # staged plan toward JOSS submission
 ├── .github/                  # issue templates + CI workflow (cli-tests.yml)
-├── LICENSE                   # Apache 2.0
+├── NOTICE.md                 # explains pending license/IP-ownership status — do not remove
 ├── README.md
 ├── CONTRIBUTING.md
 └── CODE_OF_CONDUCT.md
@@ -95,16 +105,23 @@ Priority order:
 
 ## 5. Do NOT do yet
 
+- **Do not add any LICENSE file or otherwise grant a license** — see the
+  warning at the top of this doc. This includes not publishing the CLI
+  package to PyPI (a package index install implies redistribution rights)
+  until licensing is resolved.
 - Don't submit to JOSS or draft the JOSS paper.md/paper.bib — Stage 4 in the
-  roadmap, gated on 6+ months of public history and real use in a session
-- Don't change the license or project name without checking with Val — both
-  were explicit decisions (Apache 2.0; name "Choachoakte," Yoem Noki/Yaqui
-  for "be sticky, gooey")
+  roadmap, gated on 6+ months of public history, real use in a session, AND
+  a resolved license (JOSS requires an OSI-approved license at submission)
+- Don't change the project name without checking with Val ("Choachoakte,"
+  Yoem Noki/Yaqui for "be sticky, gooey")
 
 ## Questions for Val (surface these, don't guess)
 
 - GitHub username/org to create the repo under
+- Status of the disclosure to the JH Technology Transfer Office — has it
+  been submitted yet? This gates when a LICENSE file can be added.
 - Whether the real CHKS variable subset can be shared now to replace the
   placeholder example
 - Firebase project details for wiring up the backend (new project, or reuse
-  an existing one from earlier conversations about this app)
+  an existing one from earlier conversations about this app) — note this
+  may itself count as "University support" relevant to the IP disclosure

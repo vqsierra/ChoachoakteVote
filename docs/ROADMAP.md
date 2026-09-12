@@ -4,10 +4,13 @@ This roadmap tracks the path from initial build to a JOSS (or JORS, as a
 fallback) submission. See `docs/statement-of-need.md` for the rationale.
 
 ## Stage 1 — Position and scaffold (current)
-- [x] Repo scaffolded, Apache 2.0 license, public from first commit
+- [x] Repo scaffolded, public from first commit
 - [x] Statement of need drafted
 - [ ] Statement of need reviewed/finalized by Val
-- [ ] Project name and tagline finalized (Choachoakte)
+- [x] Project name and tagline finalized (Choachoakte)
+- [ ] **License pending JHU review** — see NOTICE.md and decision log below.
+      Disclose to JH Technology Transfer Office per University IP Policy
+      Section III.A before treating any license as final.
 
 ## Stage 2 — Build for personal teaching use
 - [ ] Webapp: config-driven item loading (CSV/JSON), real-time voting board
@@ -42,7 +45,14 @@ fallback) submission. See `docs/statement-of-need.md` for the rationale.
 
 ## Decision log
 - **Name:** Choachoakte (Yoem Noki / Yaqui — "be sticky, gooey")
-- **License:** Apache License 2.0
+- **License:** Pending. Developed using JHU resources (work computer, time
+  supported by an NIH grant under the IndigiText project), which per the
+  JHU IP Policy (Section IV.D) likely makes JHU the IP owner. Apache 2.0 is
+  the working candidate for the eventual open-source license, but the
+  actual choice and authority to grant it rest with JHU pending review by
+  the Technology Transfer Office (disclosure obligation under Section
+  III.A). No LICENSE file will be added until this is resolved — see
+  NOTICE.md.
 - **Backend for personal deployment:** Firebase (chosen for infrequent-use
   cost profile; documented as a default, not a hard dependency, to keep the
   open-source version approachable for others who may prefer a different
