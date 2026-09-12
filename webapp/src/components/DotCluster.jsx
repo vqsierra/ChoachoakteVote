@@ -1,4 +1,4 @@
-import { TRACK_PARTICIPANT_COLORS } from '../config.js';
+import { DOT_SHAPE, TRACK_PARTICIPANT_COLORS } from '../config.js';
 import { decorativeColor, dotPosition, participantColor } from '../dotColors.js';
 
 export default function DotCluster({ itemId, count, placements }) {
@@ -15,7 +15,7 @@ export default function DotCluster({ itemId, count, placements }) {
       {dots.map((dot) => (
         <span
           key={dot.key}
-          className="dot-cluster__dot"
+          className={`dot-cluster__dot dot-cluster__dot--${DOT_SHAPE}`}
           style={{ backgroundColor: dot.color, left: dot.position.left, top: dot.position.top }}
         />
       ))}
