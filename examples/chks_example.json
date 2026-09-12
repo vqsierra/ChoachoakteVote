@@ -1,0 +1,27 @@
+[
+  {
+    "id": "sleep_quality",
+    "label": "Sleep quality",
+    "description": "Self-reported sleep quality in the past 30 days"
+  },
+  {
+    "id": "mood",
+    "label": "Mood / depressive symptoms",
+    "description": "Frequency of low mood in the past 30 days"
+  },
+  {
+    "id": "school_connectedness",
+    "label": "School connectedness",
+    "description": "Sense of belonging at school"
+  },
+  {
+    "id": "family_support",
+    "label": "Family support",
+    "description": "Perceived support from family members"
+  },
+  {
+    "id": "cultural_connectedness",
+    "label": "Cultural connectedness",
+    "description": "Connection to cultural traditions and practices"
+  }
+]

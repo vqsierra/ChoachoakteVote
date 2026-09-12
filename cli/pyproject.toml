@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "choachoakte-board"
+version = "0.0.1"
+description = "CLI for creating and configuring Choachoakte participatory sticky-note voting sessions"
+readme = "README.md"
+license = { text = "Apache-2.0" }
+requires-python = ">=3.9"
+authors = [
+  { name = "Val" }
+]
+keywords = ["cbpr", "participatory-research", "dot-voting", "research-tools"]
+classifiers = [
+  "License :: OSI Approved :: Apache Software License",
+  "Programming Language :: Python :: 3",
+  "Intended Audience :: Science/Research",
+  "Topic :: Scientific/Engineering",
+]
+dependencies = [
+  "qrcode>=7.4",
+  "click>=8.1",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=7.0",
+  "pytest-cov",
+]
+
+[project.scripts]
+choachoakte-board = "choachoakte.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["choachoakte*"]

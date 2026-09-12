@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+build/
+dist/
+
+# Node / webapp
+node_modules/
+.env
+.env.local
+dist/
+webapp/build/
+
+# Firebase
+.firebase/
+firebase-debug.log
+serviceAccountKey.json
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
