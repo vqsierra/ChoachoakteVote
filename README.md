@@ -29,6 +29,18 @@ directly into statistical or ML pipelines. See the full
 [Statement of Need](docs/statement-of-need.md) for details and the
 alternatives considered.
 
+## Running a session
+
+```bash
+pip install "git+https://github.com/vqsierra/ChoachoakteVote.git#subdirectory=cli"
+choachoaktevote-board create --config items.json --title "Week 3" --publish
+```
+
+Prints a shareable link and QR code — participants vote live, no account
+needed. See [docs/GETTING_STARTED.md](docs/GETTING_STARTED.md) for the full
+facilitator walkthrough (item config format, running a session, exporting
+results).
+
 ## Project structure
 
 ```
