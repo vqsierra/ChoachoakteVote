@@ -15,8 +15,8 @@ fallback) submission. See `docs/statement-of-need.md` for the rationale.
 ## Stage 2 — Build for personal teaching use
 - [ ] Webapp: config-driven item loading (CSV/JSON), real-time voting board
 - [ ] Webapp: participant join via link + QR code, no account required
-- [ ] Python CLI (`choachoaktevote-board`): create/configure a new session from
-      a config file, output link + QR
+- [x] Python CLI (`choachoaktevote-board`): create/configure a new session from
+      a config file, output link + QR (Firestore-backed via `--publish`)
 - [ ] Deploy a personal instance (own hosting + backend) for real use
 - [ ] `examples/chks.json` — worked example from Val's CHKS variable subset
 - [ ] Basic automated tests (config parsing, board/session creation, export

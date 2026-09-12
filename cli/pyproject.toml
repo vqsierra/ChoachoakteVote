@@ -21,6 +21,7 @@ classifiers = [
 dependencies = [
   "qrcode>=7.4",
   "click>=8.1",
+  "firebase-admin>=6.5",
 ]
 
 [project.optional-dependencies]
