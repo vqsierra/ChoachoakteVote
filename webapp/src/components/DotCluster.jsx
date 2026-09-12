@@ -6,7 +6,7 @@ export default function DotCluster({ itemId, count, placements }) {
     const placedBy = placements && placements[i];
     const color = TRACK_PARTICIPANT_COLORS && placedBy
       ? participantColor(placedBy)
-      : decorativeColor(i);
+      : decorativeColor(itemId, i);
     return { key: i, color, position: dotPosition(itemId, i) };
   });
 
@@ -16,7 +16,11 @@ export default function DotCluster({ itemId, count, placements }) {
         <span
           key={dot.key}
           className={`dot-cluster__dot dot-cluster__dot--${DOT_SHAPE}`}
-          style={{ backgroundColor: dot.color, left: dot.position.left, top: dot.position.top }}
+          style={{
+            background: `radial-gradient(circle at 32% 28%, rgba(255,255,255,0.75), rgba(255,255,255,0) 55%), ${dot.color}`,
+            left: dot.position.left,
+            top: dot.position.top,
+          }}
         />
       ))}
     </div>

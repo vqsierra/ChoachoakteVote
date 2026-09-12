@@ -1,4 +1,10 @@
-const PALETTE = ['#5f8a4e', '#d99a34', '#c15a3c', '#b23a6b', '#3f7ea6', '#8a5fb0'];
+// Vivid, highly saturated — echoing the holographic star stickers used in
+// the original in-person activity, not the muted card/background palette.
+// Deliberately a wide, maximized spread across the spectrum for variety.
+const PALETTE = [
+  '#ff3b3b', '#ff8a00', '#ffd400', '#4cd964', '#00c2a8',
+  '#2ec4ff', '#1554f0', '#7c4dff', '#d400ff', '#ff2d95',
+];
 
 function hashString(str) {
   let hash = 0;
@@ -17,9 +23,16 @@ function fmix32(h) {
   return (h ^ (h >>> 16)) >>> 0;
 }
 
-/** Purely decorative color cycle — no meaning attached to a given dot. */
-export function decorativeColor(index) {
-  return PALETTE[index % PALETTE.length];
+/**
+ * Purely decorative color — no meaning attached to a given dot. Seeded by
+ * itemId + index (not just index) so different items don't all show the
+ * same color sequence — each card gets its own varied, shuffled-looking
+ * order instead of every first dot being the same color.
+ */
+export function decorativeColor(itemId, index) {
+  const base = hashString(`${itemId}#color`);
+  const seed = fmix32((base ^ Math.imul(index + 1, 0x27d4eb2f)) >>> 0);
+  return PALETTE[seed % PALETTE.length];
 }
 
 /** Stable color for a participant id, so the same person's dots match across cards. */
